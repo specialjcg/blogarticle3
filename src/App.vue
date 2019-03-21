@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <Citation v-if="showComponent" @close="showComponent = false" />
-    <button @click="showComponent = true">
+    <button @click="sessai()">
       {{ title }}
     </button>
   </div>
@@ -19,6 +19,10 @@ import Citation from "./components/Citation.vue";
 export default class App extends Vue {
   showComponent: Boolean = false;
   title: string = "bonjour";
+
+  sessai() {
+    this.showComponent = true;
+  }
 }
 </script>
 

@@ -1,5 +1,5 @@
 <template>
-  <transition name="fade" @after-enter="showContent = true">
+  <transition name="fade" @after-enter="essai()">
     <div class="fond" @click="showContent = false">
       <transition name="fade" @after-leave="$emit('close')">
         <div v-if="showContent" class="content" @click.stop>
@@ -16,7 +16,7 @@ import { Component, Prop, Vue } from "vue-property-decorator";
 @Component({})
 export default class Citation extends Vue {
   Alea: String = "";
-  showContent: boolean = false;
+  showContent: Boolean = false;
   numbre: number = 0;
   citationtext: Array<string> = [
     "Exige beaucoup de toi-même et attends peu des autres. Ainsi beaucoup d'ennuis te seront épargnés.Confucius",
@@ -36,12 +36,15 @@ export default class Citation extends Vue {
       this.Alea = this.citationtext[this.numbre];
     }, 2000);
   }
+  essai() {
+    this.showContent = true;
+  }
 }
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
-fade-enter,
+.fade-enter,
 .fade-leave-to {
   opacity: 0;
 }

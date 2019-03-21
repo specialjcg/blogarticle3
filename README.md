@@ -1,34 +1,16 @@
-# blog-27022019-transition-soft
+##Transition Imbriqué avec vuejs et typescript
 
-## Project setup
-```
-yarn install
-```
+Installation en local
 
-### Compiles and hot-reloads for development
-```
-yarn run serve
-```
+dans un terminal :
+mkdir monEssaiTransition
+cd monEssaiTransition
+git clone "https://github.com/specialjcg/blogarticle3.git"
 
-### Compiles and minifies for production
-```
-yarn run build
-```
+cd blogarticle3
+npm i
+npm run serve
 
-### Run your tests
-```
-yarn run test
-```
+ouvrir l'adresse local indiqué sur votre browser préféré
 
-### Lints and fixes files
-```
-yarn run lint
-```
-
-### Run your unit tests
-```
-yarn run test:unit
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+merci
